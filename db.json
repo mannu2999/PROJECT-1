@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "Name": "sangita ji",
+      "Email": "sang@gmail.com",
+      "Gender": "female",
+      "Address": "hf",
+      "dob": "2022-09-26T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "Name": "manisha choudhary",
+      "Email": "hey@gmail.com",
+      "Gender": "female",
+      "Address": "vv",
+      "dob": "2022-09-20T18:30:00.000Z",
+      "id": 2
+    },
+    {
+      "Name": "rahul JI",
+      "Email": "helo@gmail.com",
+      "Gender": "male",
+      "Address": "dd",
+      "dob": "dd",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

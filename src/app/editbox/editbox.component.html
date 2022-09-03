@@ -1,0 +1,46 @@
+<h1 mat-dialog-title>ADD User</h1>
+<div mat-dialog-content>
+  <form [formGroup]="userform">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input formControlName="Name" matInput placeholder="name" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input formControlName="Email" matInput placeholder="email" />
+    </mat-form-field>
+    <section class="example-section">
+      <label class="example-margin">Gender</label>
+      <mat-radio-group formControlName="Gender" aria-label="Select an option">
+        <mat-radio-button *ngFor="let gen of gender" [value]="gen">{{
+          gen
+        }}</mat-radio-button>
+      </mat-radio-group>
+
+      <hr />
+    </section>
+    <mat-form-field appearance="outline">
+      <mat-label>Date Of Birth</mat-label>
+      <input formControlName="dob" matInput [matDatepicker]="picker" />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Address</mat-label>
+      <input formControlName="Address" matInput placeholder="email" />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Description</mat-label>
+      <textarea formControlName="dob" matInput></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+  <button mat-raised-button id="colorbtn" (click)="addusers()">
+    {{ edit }}
+  </button>
+  <button mat-raised-button mat-dialog-close color="warn" id="closebtn">
+    Close
+  </button>
+</div>

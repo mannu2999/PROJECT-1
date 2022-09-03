@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+}
+.main {
+  max-width: 900px;
+}
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td,
+th {
+  width: 14%;
+}
+
+#coloredit {
+  color: teal;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.color {
+  background-color: #008080;
+  color: white;
+}
